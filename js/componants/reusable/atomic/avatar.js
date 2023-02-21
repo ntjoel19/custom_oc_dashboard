@@ -1,7 +1,6 @@
 
-export const avatar = (img) => {
-    img = document.createElement("img")
-    img.alt = "user avatar"
-
+export const avatar = (profile) => {
+    console.log(profile)
+    const img = `<img src=${profile.profilePicture} alt="user avatar"/>`
     return img;
 }

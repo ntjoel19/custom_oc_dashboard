@@ -1,4 +1,4 @@
-import { main } from "./js/componants/header/index.js";
-console.log("app reloaded")
+import { header } from "./js/componants/header/index.js";
+
 const app = document.getElementById("App");
-app.innerHTML = main();
+app.innerHTML = await header();

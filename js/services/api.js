@@ -26,18 +26,14 @@ export const getCall = async (token, mentorId, sessionId, pathName) => {
         default:
             break;
     }
-    console.log(`Bearer ${token}`)
+    
     let result = await fetch(`https://api.openclassrooms.com/${path}`, {
         method: 'GET',
         headers: {
             "Accept": 'application/json',
             'Content-Type': 'application/json',
             "Authorization": `Bearer ${token}`,
-            'Access-Control-Request-Method': 'GET',
-            'Access-Control-Request-Headers': 'authorization, content-type',
-            'Origin': 'http://127.0.0.1:8080',
-            "referer": "https://openclassrooms.com/"
-        }
+        }, 
     });
 
     let resultJson = await result.json();
