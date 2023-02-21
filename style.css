@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.dflex {
+    display: flex;
+}
+
+.dflex_c {
+    flex-direction: column;
+}
+
+.dflex_start {
+    justify-content: flex-start;
+}
+
+.dflex_center_h {
+    justify-content: center;
+}
+
+.dflex_space_betw {
+    justify-content: space-between;
+}
+
+.dflex_center_h_v {
+    justify-content: center;
+    align-items: center;
+}
+
+.dflex_wrap {
+    flex-wrap: wrap;
+}
+
+
+#searchInput {
+    width: 100%;
+    height: 50px;
+    margin: 25px;
+}
+
+.recipe {
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 25px;
+    height: 430px;
+}
+ 
+.description {
+    height: 130px;
+}
+
+.description ul {
+    width: 40%;
+    display: block;
+}
+.description span {
+    overflow:scroll;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    border: 1px solid;
+    width: 55%;
+    height: 100%;
+}
+
+img {
+    height: 40%;
+    object-fit: cover;
+    background-color: gray;
+}
+
+.recipeDetails {
+    height: 60%;
+}
+
+ul{
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.tagsContainer, .tagsSelection {
+    width: 100%;
+    margin: 0px 25px 25px 25px;
+}
+
+.dropdownContainer {
+    width: 30%;
+    
+}
+
+.list {
+    width: 100%;
+    border: 1px solid gray;
+    overflow: scroll;
+    height: 250px;
+}
+
+.list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list ul li {
+    width: 40%;
+}
+
+#ingredients_list {
+    background-color: blue;
+    color: white;
+}
+
+#appareils_list {
+    background-color: green;
+    color: white;
+}
+
+#ustensiles_list {
+    background-color: red;
+    color: white;
+}
