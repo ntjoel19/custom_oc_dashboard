@@ -59,3 +59,13 @@ header .left_nav {
     padding: 5px;
     width: 8%;
 }
+
+.tasks_section {
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+main {
+    margin: 50px;
+}
