@@ -5,9 +5,9 @@ import { dispatchSessionTypes } from "../../services/utils.js";
 
 export const main = async () => {
 
-    const toDoList_and_completedList = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "",MENTOR_TODO_COMPLETED);
+    //const toDoList_and_completedList = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "",MENTOR_TODO_COMPLETED);
     
-    let mappedSessionList = dispatchSessionTypes(toDoList_and_completedList); //todo
+    let mappedSessionList = await dispatchSessionTypes();
     console.log(mappedSessionList)
 
     let sectionList = ""

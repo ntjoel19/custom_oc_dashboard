@@ -4,13 +4,13 @@ export const column = (index, sessionList) => {
     let title = ""
     switch (index) {
         case 0:
-            title = "To Do ("+sessionList.length+")"
+            title = "Comming Soon Sessions("+sessionList.length+")"
             break;
         case 1:
-            title = "Done ("+sessionList.length+")"
+            title = "Pending Sessions("+sessionList.length+")"
             break;
         case 2:
-            title = "Completed ("+sessionList.length+")"
+            title = "Completed Sessions("+sessionList.length+")"
             break;
         default:
             break;
@@ -18,12 +18,12 @@ export const column = (index, sessionList) => {
 
     let cardList = "";
     for(let i=0;i<sessionList.length;i++) {
-        cardList = `${cardList}${card(sessionList[i])}`
+        cardList = `${cardList}${card(index, sessionList[i])}`
     }
 
     const section = `
         <section class="tasks_section dflex dflex_c">
-            <h2>${title} <button class="plusButton"> <i class="fa-solid fa-plus"></i> </button></h2>
+            <h2 class="dflex dflex_space_betw">${title} </h2>
             <div>
                 ${cardList}
             </div>

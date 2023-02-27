@@ -1,22 +1,22 @@
+import { getCall, MENTOR_PENDING_CR, MENTOR_DONE, MENTOR_COMING_SOON} from "./api.js";
 
-export const dispatchSessionTypes = (toDoList_and_completedList) => {
-    const arrDone = [];
-    const arrTodo = [];
-    const arrCompl = []
+export const dispatchSessionTypes = async () => {
+    let pending = [];
+    let arrTodo = [];
+    let arrCompl = []
 
-    const result = []
+    let result = []
 
-    for (let i=0;i<10;i++) {
-        arrDone.push(toDoList_and_completedList[i]);
-    }
-    for (let i=10;i<20;i++) {
-        arrTodo.push(toDoList_and_completedList[i]);
-    }
-    for (let i=20;i<30;i++) {
-        arrCompl.push(toDoList_and_completedList[i]);
-    }
+    pending = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_PENDING_CR);
+    
+    arrTodo = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_COMING_SOON)
 
-    result.push(arrDone, arrTodo, arrCompl)
+    
+    arrCompl = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_DONE,1)
 
+    
+
+    result.push(arrTodo, pending, arrCompl)
+    
     return result
 }

@@ -64,6 +64,15 @@ header .left_nav {
     width: 30%;
     border: 1px solid gray;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.task_card {
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
 }
 
 main {
