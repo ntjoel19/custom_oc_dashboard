@@ -5,7 +5,12 @@
 body {
     max-width: 1440px;
     margin: auto;
+    font-family: 'Roboto';
+    font-size: 22px;
+    background-color: rgb(29, 34, 32);
+    color: white;
 }
+
 
 .dflex {
     display: flex;
@@ -62,17 +67,29 @@ header .left_nav {
 
 .tasks_section {
     width: 30%;
-    border: 1px solid gray;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    background : rgb(249 251 248 / 4%)
 }
 
 .task_card {
-    height: 70px;
-    border-radius: 10px;
-    border: 1px solid gray;
+    border-radius: 5px;
     margin-bottom: 5px;
+    padding: 10px;
+    background: rgb(69 73 69)
+}
+
+.column_title {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: rgb(69 73 69);
+}
+
+.tasks_list {
+   
 }
 
 main {
