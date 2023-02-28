@@ -8,8 +8,11 @@ export const leftNav = (profile) => {
     
     const leftNv = `
         <div class="left_nav dflex dflex_center_v dflex_space_betw">
-            <span class="user_name">${name}</span>
             ${av}
+            <span class="user_name">${name}</span>
+            <span> Mentor </span>
+            <span>•</span>
+            <span> Evaluateur </span>
         </div>
     `
 

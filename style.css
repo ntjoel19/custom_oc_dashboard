@@ -62,7 +62,25 @@ header .left_nav {
     border-radius: 50px;
     border: 1px solid gray;
     padding: 5px;
-    width: 8%;
+    width: 25%;
+}
+
+.nav {
+    border-bottom: 0.05em solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+main .nav li {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+    width: 150px;
+}
+
+main .nav li:hover{
+    border-bottom: 3px solid gray;
+    font-weight: 800;
 }
 
 .tasks_section {
@@ -77,7 +95,12 @@ header .left_nav {
     border-radius: 5px;
     margin-bottom: 5px;
     padding: 10px;
-    background: rgb(69 73 69)
+    background: rgb(69 73 69);
+    transition: background 1s ease;
+}
+
+.task_card:hover {
+    background: rgb(107, 113, 107);
 }
 
 .column_title {

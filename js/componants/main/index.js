@@ -16,8 +16,16 @@ export const main = async () => {
         sectionList = `${sectionList}${column(i, mappedSessionList[i])}`
     }
 
+    
+
     const main = `
         <main>
+            <ul class="nav dflex">
+                <li id="sessions"><a href="/sessions">Sessions</a></li>
+                <li id="students"><a href="/students">Etudiants</a></li>
+                <li id="bills"><a href="/bills">Bills</a></li>
+                <li id="stats"><a href="/stats">Stats</a></li>
+            </ul>
             <div class="tasks dflex dflex_space_betw">
                 ${sectionList}
             </div>
