@@ -76,11 +76,12 @@ main .nav li {
     padding-bottom: 5px;
     margin-bottom: -10px;
     width: 150px;
+    transition: border-bottom 1s ease;
 }
 
 main .nav li:hover{
     border-bottom: 3px solid gray;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .tasks_section {
@@ -89,6 +90,13 @@ main .nav li:hover{
     padding-left: 10px;
     padding-right: 10px;
     background : rgb(249 251 248 / 4%)
+}
+
+.projectLevel {
+    border-radius: 100px;
+    background: rgb(249 251 248 / 22%);
+    width: 25px;
+    height: 25px;
 }
 
 .task_card {

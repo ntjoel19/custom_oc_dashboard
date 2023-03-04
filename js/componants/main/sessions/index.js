@@ -1,6 +1,6 @@
-import { column } from "./column.js"
-import { getCall, MENTOR_DONE, MENTOR_TODO_COMPLETED } from "../../services/api.js";
-import { dispatchSessionTypes } from "../../services/utils.js";
+import { column } from "../sessions/column.js"
+import { getCall, MENTOR_DONE, MENTOR_TODO_COMPLETED } from "../../../services/api.js";
+import { dispatchSessionTypes } from "../../../services/utils.js";
 
 
 export const main = async () => {

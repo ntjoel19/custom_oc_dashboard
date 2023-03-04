@@ -12,7 +12,7 @@ export const dispatchSessionTypes = async () => {
     arrTodo = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_COMING_SOON)
 
     
-    arrCompl = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_DONE,1)
+    arrCompl = await getCall(localStorage.getItem("token"), localStorage.getItem("uid"), "", MENTOR_DONE,2)
 
     
 
